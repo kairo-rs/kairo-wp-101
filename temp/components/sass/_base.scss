@@ -1,0 +1,19 @@
+body {
+	position:relative;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	@include text-shadow(0 1px 0 rgba(255,255,255,.3));
+	text-transform: uppercase;
+	
+}
+
+strong {
+	color: $accent;
+}
+
+a {
+	 @include transition-property(color);
+     @include transition-duration(.2s);
+         
+}

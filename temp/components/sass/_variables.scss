@@ -1,0 +1,79 @@
+/* COLOR PALETTE */
+
+$copy : #010101;
+$greys : #bdc3c7;
+$light-greys :  lighten(#ecf0f1, 5%);
+$blues : #3498db;
+$violets : #9b59b6;
+$greens : #27ae60;
+$yellows : #f1c40f;
+$oranges : #d35400;
+$reds : #c0392b;
+
+/* PROJECT PALETTE */
+$accent : $blues;
+
+$secondary: $oranges;
+
+$variation: $greens;
+$body-text : $copy;
+
+$heading-color : darken($accent,10%);
+$sub-heading-color : desaturate(lighten($heading-color,3%), 100%);
+
+$body-background : lighten($light-greys,1%);
+
+$baseline : 1.5em;
+$gutter : 60px;
+
+$roundness : 0;
+
+$icon-color: darken($heading-color,5%);
+$icon-list-bs : darken($icon-color, 20%);
+
+$breathe-vertical : 6rem;
+
+/* PROJECT FONTS */
+
+$body-font : 'Lato', sans-serif;
+$heading-font : $body-font;
+$heading-font-weight: 300;
+
+$base-font-size: 16px;
+
+/* MODULES */
+
+$navbar-dark-background: darken($accent, 3%);
+$navbar-dark-link-color: lighten($greys,20%);
+
+$navbar-light-link-color: $body-text;
+
+
+$hero-background : darken($light-greys, 5%);
+
+$feature-variant-background: #010101;
+$feature-variant-text: #fcfcfc;
+$feature-variant-title: #fcfcfc;
+
+$tabs-inactive-bg-color : darken($body-background, 5%);
+$tabs-active-bg-color : $accent;
+$tabs-active-link-color: #fff;
+
+$accordion-inactive-bg-color : $tabs-inactive-bg-color;
+$accordion-active-bg-color : $tabs-active-bg-color;
+$accordion-active-link-color: $tabs-active-link-color;
+
+$sticky-footer-bg : darken($light-greys,5%);
+
+$sticky-footer-height : 6rem;
+
+$landing-background: $accent;
+
+$landing-text-color: #fcfcfc;
+
+$fixed-menu-width: 8rem;
+
+$fixed-menu-brand: $accent;
+
+$grid-block-bp : 768px;
+

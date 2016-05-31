@@ -1,0 +1,297 @@
+@import "compass/css3";
+
+@import "variables";
+@import "variables-bs";
+@import "bootstrap";
+@import "mixins";
+@import "base";
+@import "layout";
+@import "modules";
+
+.home-back {
+	background: url('http://www.bestgriprs.com/wp-content/uploads/2015/07/slide2.jpg')no-repeat center center!important;
+	@include background-size(cover);
+
+	&.jumbotron, &.hero {
+		background-color: transparent!important;
+	}
+
+	h3 {
+		font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 2em;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+	}
+}
+
+
+.navbar-default .navbar-nav>li>a {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.15em;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.nav-utilities {
+	padding-top: 2em;
+}
+
+.subMenu {
+	width: 100%;
+	padding-top: 3em;
+	.col-sm-4 {
+		margin-bottom: 3em;
+	}
+	li {
+		text-align: center;
+		a {
+			font-size: .9em;
+			font-weight: bold;
+		}
+	}
+}
+
+.car {
+
+	text-transform: uppercase;
+
+	small {
+		text-transform: none;
+	}
+	span.badge {
+	background-color: $variation;
+
+
+	&.yellow {
+		background-color: $yellows;
+	}
+	}
+}
+
+.legenda {
+	margin-bottom: $baseline*2;
+	.leg {
+		margin-top: $baseline;
+	margin-bottom: $baseline;
+	}
+	.green {
+		background: $variation;
+		padding: .5em 1em;
+	}
+	.yellow {
+		background: $yellows;
+				padding: .5em 1em;
+
+	}
+}
+
+
+
+p.navbar-text {
+	padding-left: 6rem;
+	font-style: italic;
+	font-size: .85em;
+	padding-top: 1em;
+
+	@media(max-width: $screen-md) {
+		display: none;
+	}
+}
+
+iframe#corriere   {
+	margin-top:-30px;
+}
+
+.prodGal .grid-block-3 {
+	margin-top: 0;
+}
+
+.main .grid-block-2 {
+	h4 {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+}
+
+.product-list {
+	padding-top: 1em;
+	h4 {
+		font-size: 1em;
+		padding-bottom: .4em;
+		small {
+			margin-top: 1em;
+			display: block;
+		}
+	}
+	a {
+		font-weight: bold;
+	}
+}
+
+a.logo {
+	    margin-top: .5em;
+    display: block;
+}
+
+.container-fluid {
+	max-width: 1900px;
+}
+
+.dropdownwrap .prodotti {
+	text-align: center;
+	.col-sm-4 {
+		min-height: 220px;
+		a {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: .8em;
+	}
+
+}
+
+}
+
+.dropdownwrap .prodotti, .dropdownwrap .tech,  .dropdownwrap .videoland {
+	display: none;
+}
+
+.dropdownwrap .videoland {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+
+// prods all
+// 
+.desc .dl-horizontal {
+	
+		width: 100%;
+
+		dt,dd {
+			padding-top: .25em;
+			padding-bottom: .25em;
+		}
+
+	dt {
+			min-width: 320px;
+			text-align: left;
+			border-top: 1px dotted #ccc;
+		}
+
+		dd {
+			padding-left: 1em;
+			border-top: 1px dotted #ccc;
+			@media (min-width: $screen-sm) {
+				margin-left: 322px;
+			}
+		}
+}
+
+
+
+	.videoland {
+		h3 {
+			    background: rgba(0,0,0,.05);
+ 				   padding: 1em;
+
+ 				   a {
+				
+				 font-weight: bold;
+			}
+		}
+		.video h3 {
+			padding-top:3em;
+			padding-bottom: 3em;
+			background: url(../media/best.jpg)no-repeat center center;
+			@include background-size(cover);
+			a {
+				 @include text-shadow(0 1px 4px rgba(0,0,0,.9));
+				 color: #fcfcfc;
+				 font-size: 1.4em;
+			}
+			
+		}
+		}
+	
+
+	.main {
+		background-color: #fff;
+	}
+
+
+
+	.logo img {
+		max-width: 120%;
+		height:auto;
+	}
+
+	#main-menu {
+		margin-top: 1em;
+
+		li {
+			margin-right: 0;	
+			text-align: right;
+
+			a {
+				@media (max-width: 1024px) {
+					font-size: .9em;
+				}
+			}
+		}
+	}
+
+
+
+	li.product {
+		margin-bottom: 8rem;
+    border-bottom: 1px dashed #ccc;
+    padding: 1em 0;
+	.page-header {
+		background: #fff;
+    border: 1px solid #ccc;
+    padding-top: .5em;
+	}
+    .chiavi {
+    	h4 {
+    		margin-bottom: 3em;
+    		padding-top: 1em;
+    	}
+    	img {
+    		margin:1em auto;
+    	}
+    }
+
+    .agg {
+    	h4{
+    		    margin-bottom: .5em;
+			    border-bottom: 0;
+			}
+
+		ul {
+			margin-bottom: 1em;
+		}
+    }
+    .conf {
+    	padding-top: 1em;
+    	text-align: center;
+
+    	@include box-shadow(0 1px 2px rgba(0,0,0,.2));
+    }
+	}
+
+
+
+	#identity, footer {
+		.col-sm-4 {
+			text-align: center;
+			h4 {
+				font-weight: bold;
+				color: $secondary;
+				margin-bottom: 1em;
+			}
+		}
+	}

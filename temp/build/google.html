@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<title>Kairo 101</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+  <body class="fl">
+    <!-- NAVIGAZIONE PRINCIPALE -->
+      
+      <nav class="navigation-container" id="main-nav">
+          <ul class="main-nav">
+            <li class="active home"><a href="#" class="icon"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="#" class="icon"><span class="glyphicon glyphicon-record"></span>L'azienda</a></li>
+            <li><a href="#" class="icon"><span class="glyphicon glyphicon-flash"></span>Prodotti</a></li>
+            <li><a href="#" class="icon"><span class="glyphicon glyphicon-eye-open"></span>Ricerca</a></li>
+            <li><a href="#" class="icon"><span class="glyphicon glyphicon-send"></span>Contatti</a></li>
+            <li><a href="#" class="icon"><span class="glyphicon glyphicon-picture"></span>Gallery</a></li>
+          </ul>
+      </nav>  <!-- end navigation container -->
+
+    <!-- FINE NAVIGAZIONE PRINCIPALE -->
+    <!-- MAIN CONTENT -->
+    <div id="main-content">
+      <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          
+          <a href="#" class="navbar-brand"><img src="img/demo/logo.png" alt="" class="img-responsive"></a>
+        </div>
+        <form class="navbar-form searchbox" role="search">
+           <div class="input-group">
+           <div class="input-group-btn action position-none">
+              <button type="button" class="btn btn-default dropdown-toggle position-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i>
+<span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div><!-- /btn-group -->
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button">Go!</button>
+            </span>
+          </div><!-- /input-group -->
+        </form>
+       
+      </div>
+    </nav>
+   
+
+    <section id="gmap">
+    	<div class="container-fluid">
+    		<div class="row">
+    		<div class="col-xs-12">
+    			<h1 class="page-header">Google Map</h1>
+    		</div>
+    	</div>
+    	<div class="row">
+
+    		<div class="col-xs-12">
+    			<div id="map-canvas"></div>
+    		</div>
+    	</div>
+    	</div>
+    	
+    </section>
+
+	
+    </div>  <!-- end main content -->
+    
+
+
+
+    
+
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false">
+	   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNIp-9uB4VBbQZIKL6QJdaLJPW6A7VKlM&callback=initMap"
+  type="text/javascript"></script>
+
+	<script src="js/markerclusterer.js"></script>
+	<script src="js/List.js"></script>
+	<script src="js/Mapster.js"></script>
+	<script src="js/maps-options.js"></script>
+	<script src="js/final.js"></script>
+	<script src="js/scripts.js"></script>
+  </body>
+</html>
